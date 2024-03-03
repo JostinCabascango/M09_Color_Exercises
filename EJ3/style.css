@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    Width: 100vw;
+    height: 100vh;
+    background-color: #F8F9FA; /* Color - Gris Claro */
+
+}
+
+/*----------------------------- Menu ------------------------------------------*/
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #1a237e; /* Color 1 - Indigo */
+    width: 100vw;
+    height: auto;
+}
+
+#navbar ul li {
+    float: right;
+    color: white;
+    margin-right: 3rem;
+    list-style: none;
+    padding: 1.5rem
+}
+
+#navbar ul li:hover {
+    background-color: #ff6f00; /* Color 2 - Amber */
+}
+
+/* <------------------HERO IMAGE --------------------------> */
+#banner {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: #99ff99; /* Color - Verde claro */
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#banner h1, #banner p {
+    position: absolute;
+    color: #b71c1c; /* Color 3 - Red */
+}
+
+#banner h1 {
+    top: 20%;
+    left: 10%;
+}
+
+#banner p {
+    top: 30%;
+    left: 10%;
+}
+
+/* -----------------------------------------Sobre nosotros ------------------------------------------------*/
+#about-us {
+    margin-top: 5vh;
+    background-color: #9999ff; /* Color - Azul claro */
+
+}
+
+#about-us h2 {
+    margin-top: 2rem;
+    margin-left: 10vw;
+}
+
+.imgLeft {
+    float: left;
+    border-radius: 20%;
+    width: 170px;
+    height: 170px;
+    border-color: #4a148c; /* Color 4 - Purple */
+
+}
+
+.imgRight {
+    float: right;
+    border-radius: 20%;
+    width: 170px;
+    height: 170px;
+    border-color: #4a148c; /* Color 4 - Purple */
+
+}
+
+.about-images {
+    margin-bottom: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+
+}
+
+/* ------------------------------------------------------Carta-------------------------------------------- */
+.header {
+    grid-area: header;
+}
+
+.header h1 {
+    background-color: #0a175a;
+    color: white;
+}
+
+.menu {
+    grid-area: menu;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    grid-area: contenido;
+}
+
+.contenido h2 {
+    text-align: start;
+    margin-left: 1rem;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.1fr 0.3fr 0.3fr;
+    grid-template-rows: 0.1fr 0.2fr 0.1fr;
+    grid-auto-flow: row;
+    gap: 1rem;
+    grid-template-areas:
+                "header header header"
+                "menu contenido contenido"
+                "menu img1 img2";
+    background-color: #ffff99; /* Color - Amarillo claro */
+}
+
+.grid-container > div {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#menu {
+    width: 80%;
+    margin: auto;
+    background-color: #99ffff; /* Color - Cian claro */
+
+}
+
+#menu h2 {
+    margin-top: 1vh;
+
+}
+
+/* ----------------------------------------Galería------------------------------------------------- */
+#gallery {
+    background-color: #ff99ff; /* Color - Rosa claro */
+}
+
+#gallery h2 {
+    margin-left: 10vw;
+    margin-top: 1vh;
+}
+
+/* Galería de fotos */
+#gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 81%;
+}
+
+#gallery-images img {
+    width: 21%;
+    height: auto;
+    margin: 1%;
+    border: 1px solid #fff;
+    filter: brightness(1);
+
+}
+
+#gallery-images img:hover {
+    border-color: #ff6f00; /* Color 2 - Amber */
+    filter: brightness(0.7);
+}
+
+#gallery-images img:nth-child(1),
+#gallery-images img:nth-child(4),
+#gallery-images img:nth-child(5),
+#gallery-images img:nth-child(8) {
+    filter: brightness(0.7);
+}
+
+/* ----------------------------------------FOOTER------------------------------------------------- */
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a237e; /* Color 1 - Indigo */
+    display: flex;
+    margin-top: 1rem;
+}
+
+footer p {
+    color: #ffffff; /* Color 6 - White */
+}
+
+
+.section {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section:nth-child(-n+2) {
+    flex: 0 0 17%;
+}
+
+
+.section:last-child {
+    flex: 0 0 115%;
+}
+
+footer .section i {
+    margin-right: 1vw;
+}
+

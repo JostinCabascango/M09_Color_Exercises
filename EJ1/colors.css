@@ -1,0 +1,43 @@
+.circle {
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.5;
+}
+
+#red {
+    background-color: red;
+    top: 5vw;
+    left: 5vw;
+}
+
+#green {
+    background-color: green;
+    top: 5vw;
+    left: 10vw;
+}
+
+#blue {
+    background-color: blue;
+    top: 10vw;
+    left: 7.5vw;
+}
+
+#cyan {
+    background-color: cyan;
+    top: 20vw;
+    left: 5vw;
+}
+
+#magenta {
+    background-color: magenta;
+    top: 20vw;
+    left: 10vw;
+}
+
+#yellow {
+    background-color: yellow;
+    top: 25vw;
+    left: 7.5vw;
+}
